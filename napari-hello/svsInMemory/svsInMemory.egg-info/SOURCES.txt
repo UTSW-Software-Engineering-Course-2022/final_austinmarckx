@@ -1,0 +1,16 @@
+pyproject.toml
+setup.cfg
+./svsInMemory/__init__.py
+./svsInMemory/_reader.py
+./svsInMemory/_svsInMemory.py
+./svsInMemory/svsInMemory.yaml
+svsInMemory/__init__.py
+svsInMemory/_reader.py
+svsInMemory/_svsInMemory.py
+svsInMemory/svsInMemory.yaml
+svsInMemory.egg-info/PKG-INFO
+svsInMemory.egg-info/SOURCES.txt
+svsInMemory.egg-info/dependency_links.txt
+svsInMemory.egg-info/entry_points.txt
+svsInMemory.egg-info/requires.txt
+svsInMemory.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+[napari.manifest]
+svsInMemory = svsInMemory:svsInMemory.yaml
+
+[napari.plugin]
+svsInMemory = svsInMemory

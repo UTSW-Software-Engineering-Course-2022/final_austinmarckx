@@ -1,0 +1,15 @@
+name: svsInMemory
+contributions:
+  commands:
+    - id: svsInMemory
+      title: Load whole svs file into memory
+      python_name: svsInMemory:svsInMemory
+  readers:
+    - command: svsInMemory
+      accepts_directories: false
+      filename_patterns: ['*.svs']
+  widgets:
+    - command: svsInMemory # note, same as command.id above
+      display_name: svsInMemory
+      autogenerate: true
+

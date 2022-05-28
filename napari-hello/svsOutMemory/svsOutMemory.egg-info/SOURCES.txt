@@ -1,0 +1,16 @@
+pyproject.toml
+setup.cfg
+./svsOutMemory/__init__.py
+./svsOutMemory/_reader.py
+./svsOutMemory/_svsOutMemory.py
+./svsOutMemory/svsOutMemory.yaml
+svsOutMemory/__init__.py
+svsOutMemory/_reader.py
+svsOutMemory/_svsOutMemory.py
+svsOutMemory/svsOutMemory.yaml
+svsOutMemory.egg-info/PKG-INFO
+svsOutMemory.egg-info/SOURCES.txt
+svsOutMemory.egg-info/dependency_links.txt
+svsOutMemory.egg-info/entry_points.txt
+svsOutMemory.egg-info/requires.txt
+svsOutMemory.egg-info/top_level.txt
