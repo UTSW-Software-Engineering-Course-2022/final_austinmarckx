@@ -113,4 +113,5 @@ sm_path = "D:/repos/swe22_final/sm.svs"
 #viewer.add_image( [svs2dask_array_pyramid(img, gen, level) for level in range(lvls)], contrast_limits=[0,255])
 
 viewer = napari.Viewer()
-viewer.add_image( svs2dask_array(sm_path), contrast_limits=[0,255])
+viewer
+#viewer.add_image( svs2dask_array(sm_path), contrast_limits=[0,255])

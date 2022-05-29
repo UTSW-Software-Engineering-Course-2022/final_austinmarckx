@@ -1,0 +1,5 @@
+[napari.manifest]
+svsOutMemoryHED = svsOutMemoryHED:svsOutMemoryHED.yaml
+
+[napari.plugin]
+svsOutMemoryHED = svsOutMemoryHED

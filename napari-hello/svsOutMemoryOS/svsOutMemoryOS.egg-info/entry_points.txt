@@ -1,0 +1,5 @@
+[napari.manifest]
+svsOutMemoryOS = svsOutMemoryOS:svsOutMemoryOS.yaml
+
+[napari.plugin]
+svsOutMemoryOS = svsOutMemoryOS

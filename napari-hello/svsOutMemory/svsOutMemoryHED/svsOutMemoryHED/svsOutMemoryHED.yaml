@@ -1,0 +1,15 @@
+name: svsOutMemoryHED
+contributions:
+  commands:
+    - id: svsOutMemoryHED.svsOutMemoryHED
+      title: Lazy Load svs file into memory
+      python_name: svsOutMemoryHED:svsOutMemoryHED
+  readers:
+    - command: svsOutMemoryHED.svsOutMemoryHED
+      accepts_directories: false
+      filename_patterns: ['*.svs']
+  widgets:
+    - command: svsOutMemoryHED.svsOutMemoryHED # note, same as command.id above
+      display_name: svsOutMemoryHED
+      autogenerate: true
+
