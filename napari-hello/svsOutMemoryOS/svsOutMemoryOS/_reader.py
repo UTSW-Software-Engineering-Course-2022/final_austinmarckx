@@ -70,7 +70,6 @@ def reader_function(path, in_memory : bool):
     levels = len(img.level_dimensions)
 
     allow_unknown_chunksizes=False
-
     imgPy = []
 
     for level in range(levels):
@@ -80,10 +79,12 @@ def reader_function(path, in_memory : bool):
         sample_tile = get_tile(max_level,0,0)
         sample_tile_shape = sample_tile.shape
         dask_get_tile = delayed(get_tile, pure=True)
-        arr = (da.concatenate([da.concatenate([da.from_delayed(dask_get_tile(max_level,i,j),sample_tile_shape,np.uint8) for j in range(n_tiles_y)],allow_unknown_chunksizes=allow_unknown_chunksizes,axis=1) for i in range(n_tiles_x )],allow_unknown_chunksizes=allow_unknown_chunksizes))#.transpose([1,0,2]))
+        arr = (da.concatenate([da.concatenate([da.from_delayed(dask_get_tile(max_level,i,j),
+            sample_tile_shape,np.uint8) for j in range(n_tiles_y)],
+            allow_unknown_chunksizes=allow_unknown_chunksizes,axis=1) for i in range(n_tiles_x )],
+            allow_unknown_chunksizes=allow_unknown_chunksizes))#.transpose([1,0,2]))
 
         imgPy.append(arr)
-
 
     # For now, ignore metadata
     add_kwargs = {}
